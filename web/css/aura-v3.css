@@ -120,3 +120,45 @@ body:not(.v31-premium):not(.v32-premium) .profile-gate{background:var(--a33-bg)!
 /* stronger accessible secondary text */
 body.v32-premium .section,body.v32-premium label,body.v32-premium .v32-mobile-title{color:#58675E!important}
 @media(max-width:700px){body.v31-premium .tabs,body.v32-premium .tabs{background:rgba(255,252,246,.96)!important;border-color:#D6CEBF!important}.v31-premium .tab,.v32-premium .tab{color:#506158!important}.v31-premium .tab.active,.v32-premium .tab.active{color:#fff!important}.v32-feature{border-radius:18px!important}}
+
+/* Aura v3.4 — Sand & Sage contrast normalization */
+:root{--a34-deep:#173D2C;--a34-deep2:#244E39;--a34-ink:#17251D;--a34-body:#34483C;--a34-muted:#637268;--a34-cream:#FFFDF7;--a34-sage:#E4ECE2;--a34-sage2:#D5E1D3;--a34-line:#D8D0C1}
+/* profile selection: remove legacy navy/grey surfaces */
+#select{color:var(--a34-ink)!important}
+#select .gate h1,#select .gate h2,#select .gate h3{color:var(--a34-ink)!important}
+#select .gate>p,#select .profile-card p,#select .profile-card .small{color:var(--a34-muted)!important}
+#select .profile-card{background:var(--a34-cream)!important;color:var(--a34-ink)!important;border:1px solid var(--a34-line)!important;box-shadow:0 12px 32px rgba(42,62,48,.07)!important;transition:.2s ease!important}
+#select .profile-card:hover{transform:translateY(-2px);border-color:#AFC0AF!important;box-shadow:0 16px 38px rgba(42,62,48,.10)!important}
+#select .profile-card h3{color:var(--a34-ink)!important}
+#select .profile-card:not(.locked) .small{color:var(--a33-green)!important;font-weight:700!important}
+#select .profile-card.locked{opacity:1!important;background:#EEEAE1!important;color:#667168!important}
+#select .profile-card.locked h3{color:#59665D!important}#select .profile-card.locked p,#select .profile-card.locked .small{color:#7A837D!important}
+/* navigation: explicit accessible contrast */
+body.v31-premium .tab,body.v32-premium .tab{color:#34483C!important;font-weight:720!important}
+body.v31-premium .tab:hover,body.v32-premium .tab:hover{color:#173D2C!important;background:#E4ECE2!important}
+body.v31-premium .tab.active,body.v32-premium .tab.active{color:#FFFDF7!important;background:#315C46!important}
+/* quests: remove legacy dark rows and guarantee text contrast */
+body.v31-premium .aura-v2-questcard,body.v32-premium .aura-v2-questcard,body.v31-premium .aura-v2-card,body.v32-premium .aura-v2-card{background:var(--a34-cream)!important;color:var(--a34-ink)!important;border-color:var(--a34-line)!important}
+body.v31-premium .aura-v2-quests .row,body.v32-premium .aura-v2-quests .row{background:#F4F7F1!important;border:1px solid #D8E1D5!important;color:var(--a34-ink)!important;border-radius:16px!important;margin:10px 0!important;padding:14px 16px!important}
+body.v31-premium .aura-v2-quests .row h4,body.v32-premium .aura-v2-quests .row h4{color:#173D2C!important;font-weight:750!important}
+body.v31-premium .aura-v2-quests .row p,body.v32-premium .aura-v2-quests .row p{color:#637268!important}
+body.v31-premium .aura-v2-quests .check,body.v32-premium .aura-v2-quests .check{background:#FFFDF7!important;border-color:#AFC0AF!important;color:#315C46!important}
+body.v31-premium .aura-v2-quests .check.done,body.v32-premium .aura-v2-quests .check.done{background:#315C46!important;color:#fff!important;border-color:#315C46!important}
+body.v31-premium .aura-v2-quests .status,body.v32-premium .aura-v2-quests .status{color:#315C46!important;border-color:#B8C7B6!important;background:#E4ECE2!important}
+/* motivation card: deep green with cream text */
+body.v31-premium .aura-v2-cardart,body.v32-premium .aura-v2-cardart{background:linear-gradient(145deg,#244E39,#173D2C)!important;border-color:#315C46!important;color:#FFF8E9!important;box-shadow:inset 0 1px rgba(255,255,255,.08)!important}
+body.v31-premium .aura-v2-card h3,body.v32-premium .aura-v2-card h3{color:var(--a34-ink)!important}
+body.v31-premium .aura-v2-card .copy,body.v32-premium .aura-v2-card .copy{color:var(--a34-muted)!important}
+/* achievements: no washed-out labels */
+body.v31-premium .aura-v2-ach div,body.v32-premium .aura-v2-ach div{opacity:1!important;background:#F7F3EA!important;border-color:#DED7C9!important;color:#536158!important}
+body.v31-premium .aura-v2-ach div.on,body.v32-premium .aura-v2-ach div.on{background:#E4ECE2!important;border-color:#B5C5B3!important;color:#173D2C!important}
+body.v31-premium .aura-v2-ach b,body.v32-premium .aura-v2-ach b{color:inherit!important}
+body.v31-premium .aura-v2-ach span,body.v32-premium .aura-v2-ach span{color:#66746B!important;font-weight:650!important}
+/* normalize remaining legacy dark content surfaces */
+body.v32-premium .multi-day-card,body.v32-premium .timeline-card,body.v32-premium .connection-card,body.v32-premium .admin-profile-card{background:var(--a34-cream)!important;color:var(--a34-ink)!important;border-color:var(--a34-line)!important}
+body.v32-premium .session-card,body.v32-premium .block-card,body.v32-premium .wellbeing-item,body.v32-premium .support-btn,body.v32-premium .data-toggle,body.v32-premium .integration-node{background:#F8F4EB!important;color:var(--a34-ink)!important;border-color:var(--a34-line)!important}
+body.v32-premium .motivation-hero{background:linear-gradient(145deg,#EEF3EA,#FFF9EE)!important;color:var(--a34-ink)!important}
+body.v32-premium .why-node{background:#FFFDF7!important;color:#315C46!important;border-color:#B9C7B9!important}
+/* secondary text floor: never light grey on cream */
+body.v32-premium .small,body.v32-premium .copy,body.v32-premium .meta,body.v32-premium .timeline-sub,body.v32-premium .wellbeing-item span,body.v32-premium .support-btn span{color:#637268!important}
+@media(max-width:700px){#select .profile-card{min-height:132px!important}body.v32-premium .tab{color:#34483C!important;font-size:10.5px!important;font-weight:750!important}body.v32-premium .tab.active{color:#FFFDF7!important}}
