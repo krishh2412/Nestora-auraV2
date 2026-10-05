@@ -1,0 +1,18 @@
+-- ============================================================
+-- SECURITY MODEL
+-- ============================================================
+-- Aura schema is intentionally NOT granted directly to anon.
+-- Browser should call the Edge Function.
+--
+-- Production:
+-- 1. Edge Function verifies Supabase Auth user.
+-- 2. Verify user belongs to requested family_id.
+-- 3. Edge Function uses service role to call public wrapper RPCs.
+--
+-- Current Nestora has custom family_users as well as family_members.user_id.
+-- Adapt the family-access check to your actual login design before deployment.
+--
+-- DO NOT:
+-- grant anon full access to schema aura;
+-- expose SUPABASE_SERVICE_ROLE_KEY in browser code;
+-- make service-role credentials part of aura-config.js.

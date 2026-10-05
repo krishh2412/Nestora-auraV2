@@ -1,0 +1,4 @@
+<key>NSHealthShareUsageDescription</key>
+<string>Aura reads health and activity data you choose to share to personalize workouts and recovery.</string>
+<key>NSHealthUpdateUsageDescription</key>
+<string>Aura writes health data only when you explicitly choose to save it.</string>
