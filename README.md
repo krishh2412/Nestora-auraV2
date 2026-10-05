@@ -1,3 +1,7 @@
+# Aura v2.1 – Workout Engine
+
+Adds Workout Player with timer and voice countdown, editable coach programme builder, coach-plan template, and postpartum workout/routine pathways.
+
 # Aura v2
 Aura is the fitness, habits, recovery and personal-performance companion to Nestora.
 
